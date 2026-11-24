@@ -24,7 +24,7 @@
 <p>Critline Board（以下「本アプリ」）は、利用者が入力した予定（タイトル・日付・時刻のメモ・場所・メモ・状態）と、行として登録した人の名前・設備名・案件名・グループ名、会社名などの情報を扱います。Critline Gantt・Critline Load と同じデータベースを使うため、それらのアプリで入力した案件の情報も同じファイルに保存されます。</p>
 
 <h2>2. 保存場所</h2>
-<p>これらの情報は、利用者のパソコン（既定はドキュメント フォルダの「Critline」）または利用者が指定した社内の共有フォルダにあるデータベース ファイルにだけ保存します。バックアップも同じフォルダの中に作ります。共有フォルダで使うときは、編集中のパソコンの名前とユーザー名をロック ファイルと予定の更新者として同じフォルダに記録します。ウィンドウの位置・表示の設定・言語は、利用者のパソコンの AppData フォルダ（Critline\CritlineBoard.ini）に保存します。</p>
+<p>これらの情報は、利用者のパソコン（既定はドキュメント フォルダの「Critline」）または利用者が指定した社内の共有フォルダにあるデータベース ファイルと、その横のフォルダにだけ保存します。バックアップも同じフォルダの中に作ります。人ごとの今日の行先（状態・行先・戻りの時刻と、設定したパソコンの名前・ユーザー名・時刻）は、データベースと同じフォルダの「データベース名.presence」フォルダに 1 人 1 ファイルで保存します。共有フォルダで使うときは、編集中のパソコンの名前とユーザー名をロック ファイルと予定の更新者として同じフォルダに記録します。ウィンドウの位置・表示の設定・言語は、利用者のパソコンの AppData フォルダ（Critline\CritlineBoard.ini）に保存します。</p>
 
 <h2>3. 外部への送信</h2>
 <p>本アプリはインターネットに接続せずに動作し、入力された情報を G-Works を含む外部に送信しません。利用状況の収集（テレメトリ）や広告も行いません。本アプリは無償で、購入や登録はありません。</p>
@@ -52,7 +52,7 @@
 <h2>1. Information handled</h2>
 <p>Critline Board (the "app") handles the events you enter (title, dates, time note, place, memo, status) and the rows you register: names of people, equipment, projects and groups, and your company name. It shares its database with Critline Gantt and Critline Load, so projects entered in those apps are kept in the same file.</p>
 <h2>2. Where it is kept</h2>
-<p>This information is kept only in a database file on your PC (by default the "Critline" folder in Documents) or in a shared folder on your network that you choose. Backups are made in the same folder. On a shared folder, the name of the editing PC and the user name are written to a lock file and as the last editor of events. Window position, view settings and language are kept in the AppData folder of your PC (Critline\CritlineBoard.ini).</p>
+<p>This information is kept only in a database file, and in a folder next to it, on your PC (by default the "Critline" folder in Documents) or in a shared folder on your network that you choose. Backups are made in the same folder. Where each person is today (status, where, back time, and the PC name, user name and time of who set it) is kept as one small file per person in the folder "<database name>.presence" next to the database. On a shared folder, the name of the editing PC and the user name are written to a lock file and as the last editor of events. Window position, view settings and language are kept in the AppData folder of your PC (Critline\CritlineBoard.ini).</p>
 <h2>3. What is sent</h2>
 <p>The app works without an internet connection and sends nothing you enter to anyone, G-Works included. It collects no usage data (telemetry) and shows no ads. The app is free and needs no purchase or registration.</p>
 <p>Only when you choose "Critline series apps" or "G-Works website" in Help, or answer Yes when "Make a Critline Gantt schedule" offers the Store because Critline Gantt is not installed, the app opens one of these pages in your default browser or the Microsoft Store app. Nothing opens by itself at start-up.</p>
